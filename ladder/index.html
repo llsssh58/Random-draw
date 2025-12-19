@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>사다리 타기 Deluxe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app">
+        <h2>사다리 타기 Deluxe</h2>
+        <div class="grid">
+            <div class="panel">
+                <h3>이름 + 캐릭터</h3>
+                <div id="names"></div>
+                <button id="addNameBtn" class="btn secondary">+ 추가</button>
+            </div>
+            <div class="panel">
+                <h3>벌칙 / 결과</h3>
+                <div id="results"></div>
+                <button id="addResultBtn" class="btn secondary">+ 추가</button>
+            </div>
+        </div>
+
+        <div class="actions">
+            <button id="genBtn" class="btn">사다리 생성</button>
+            <button id="resetBtn" class="btn secondary">초기화</button>
+        </div>
+
+        <canvas id="ladder"></canvas>
+        <div class="hint">👆 위 캐릭터 라인을 클릭/터치하면 선을 따라 내려갑니다.</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
